@@ -11,6 +11,7 @@
 
 #include "alumnos.h"
 #include <stdio.h>
+#include <string.h>
 
 /*=====[Inclusions of private function dependencies]=========================*/
 
@@ -23,6 +24,18 @@
 /*=====[Definitions of external public global variables]=====================*/
 
 /*=====[Definitions of public global variables]==============================*/
+
+static const struct alumno_s FEDERICO_PACHER = {
+    .apellidos = "PACHER",
+    .nombres = "Federico",
+    .documento = "28.215.978",
+};
+
+const alumno_t ALUMNOS[] = {
+    &FEDERICO_PACHER,
+};
+
+const int CANTIDAD_ALUMNOS = (sizeof(ALUMNOS) / sizeof(alumno_t));
 
 /*=====[Definitions of private global variables]=============================*/
 
@@ -44,6 +57,26 @@ bool SerializarAlumno(char * cadena, size_t espacio, const alumno_t alumno) {
              alumno->documento, alumno->apellidos, alumno->nombres);
 
     return (resultado >= 0);
+}
+
+bool SerializarAlumnos(char * cadena, size_t espacio, const alumno_t alumnos[], int cantidad) {
+    int posicion = snprintf(cadena, espacio, "[\r\n  ");
+    bool resultado = (posicion > 0);
+
+    if (resultado){
+        for(int indice = 0; indice < cantidad; indice++ ) {
+            resultado = SerializarAlumno(&cadena[posicion], espacio - posicion, alumnos[indice]);
+            if (resultado) {
+                posicion += strlen(&cadena[posicion]);
+                posicion += snprintf(&cadena[posicion], espacio - posicion, ",\r\n  ");
+            } else {
+                break;
+            }
+        }
+    }
+
+    snprintf(&cadena[posicion] - 5, espacio - posicion + 5, "\r\n]");
+    return resultado;
 }
 
 /*=====[Implementations of private functions]================================*/

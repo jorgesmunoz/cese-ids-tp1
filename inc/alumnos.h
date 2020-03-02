@@ -37,9 +37,15 @@ typedef struct alumno_s {
 
 /*=====[Definitions of public global variables]==============================*/
 
+extern const alumno_t ALUMNOS[];
+
+extern const int CANTIDAD_ALUMNOS;
+
 /*=====[Prototypes (declarations) of public functions]=======================*/
 
 bool SerializarAlumno(char * cadena, size_t espacio, const alumno_t alumno);
+
+bool SerializarAlumnos(char * cadena, size_t espacio, const alumno_t alumnos[], int cantidad);
 
 /*=====[Prototypes (declarations) of public interrupt functions]=============*/
 
