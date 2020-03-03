@@ -25,6 +25,7 @@
 
 /*=====[Definitions of public global variables]==============================*/
 
+
 static const struct alumno_s FEDERICO_PACHER = {
     .apellidos = "PACHER",
     .nombres = "Federico",
