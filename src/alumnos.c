@@ -25,11 +25,9 @@
 
 /*=====[Definitions of public global variables]==============================*/
 
-<<<<<<< HEAD
-//! Tipo de dato que almacena los datos del alumno
-=======
 
->>>>>>> develop
+//! Tipo de dato que almacena los datos del alumno
+
 static const struct alumno_s FEDERICO_PACHER = {
     .apellidos = "PACHER",  //!<    Apellido del alumno
     .nombres = "Federico",  //!<    Nombre del alumno
