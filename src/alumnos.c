@@ -25,14 +25,41 @@
 
 /*=====[Definitions of public global variables]==============================*/
 static const struct alumno_s LUCAS_MONZONLANGUASCO = {
-        .apellidos = "MONZON LANGUASCO",
-        .nombres = "Lucas Fabricio",
-        .documento = "38.876.668",
-    };
+    .apellidos = "MONZON LANGUASCO",
+    .nombres = "Lucas Fabricio",
+    .documento = "38.876.668",
+};
 
+static const struct alumno_s KEVIN_MONCAYO = {
+    .apellidos = "MONCAYO MUÑOZ",
+    .nombres = "Jorge Kevin",
+    .documento = "1.085.298.019",
+};
+
+static const struct alumno_s ESTEBAN_VOLENTINI = {
+    .apellidos = "VOLENTINI",
+    .nombres = "Esteban Daniel",
+    .documento = "23.517.968",
+};
+
+static const struct alumno_s HANES_SCIARRONE = {
+    .apellidos = "SCIARRONE",
+    .nombres = "Hanes Nahuel",
+    .documento = "37.867.564",
+};
+
+static const struct alumno_s JOSE_LOPEZ = {
+    .apellidos = "LOPEZ",
+    .nombres = "José Daniel",
+    .documento = "20.010.452",
+};
 
 const alumno_t ALUMNOS[] = {
-	&LUCAS_MONZONLANGUASCO,
+    &LUCAS_MONZONLANGUASCO,
+    &KEVIN_MONCAYO,
+    &HANES_SCIARRONE,
+    &JOSE_LOPEZ,
+    &ESTEBAN_VOLENTINI,
 };
 
 const int CANTIDAD_ALUMNOS = (sizeof(ALUMNOS) / sizeof(alumno_t));
