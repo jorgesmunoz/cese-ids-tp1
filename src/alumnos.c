@@ -24,8 +24,14 @@
 /*=====[Definitions of external public global variables]=====================*/
 
 /*=====[Definitions of public global variables]==============================*/
+static const struct alumno_s KEVIN_MONCAYO = {
+    .apellidos = "MONCAYO MUÑOZ",
+    .nombres = "Jorge Kevin",
+    .documento = "1.085.298.019",
+};
 
 const alumno_t ALUMNOS[] = {
+    &KEVIN_MONCAYO,
 };
 
 const int CANTIDAD_ALUMNOS = (sizeof(ALUMNOS) / sizeof(alumno_t));
