@@ -33,7 +33,7 @@ static const struct alumno_s LUCAS_MONZONLANGUASCO = {
 static const struct alumno_s KEVIN_MONCAYO = {
     .apellidos = "MONCAYO MUÑOZ",
     .nombres = "Jorge Kevin",
-    .documento = "5.298.019",
+    .documento = "1.085.298.019",
 };
 
 static const struct alumno_s ESTEBAN_VOLENTINI = {
