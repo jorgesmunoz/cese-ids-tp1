@@ -28,7 +28,7 @@
 static const struct alumno_s MUNOZ_JORGE = {
         .apellidos = "MUÑOZ",
         .nombres = "Jorge Salvador",
-        .documento = "33.027.191",
+        .documento = "33.027.027",
     };
 
 const alumno_t ALUMNOS[] = {
