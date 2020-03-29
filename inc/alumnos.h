@@ -29,7 +29,6 @@ extern "C" {
 
 /*=====[Definitions of public data types]====================================*/
 
-//! Tipo de dato para almacenar los datos del alumno 
 typedef struct alumno_s {
     char apellidos[30];
     char nombres[30];
