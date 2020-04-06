@@ -34,6 +34,7 @@
 
 /*=====[Implementations of private functions]================================*/
 
+//! Función principal del programa. Imprime el listado total de alumnos.
 int main(int argc, char *argv[]) {
     char cadena[256];
 

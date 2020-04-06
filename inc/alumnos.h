@@ -29,21 +29,47 @@ extern "C" {
 
 /*=====[Definitions of public data types]====================================*/
 
+//! Estructura de datos para cargar alumnos
 typedef struct alumno_s {
+    //! Vector para guardar apellido de alumno
     char apellidos[30];
+    //! Vector para guardar nombres de alumno
     char nombres[30];
+    //! Vector para guardar documento de identidad de alumno
     char documento[11];
 } const * alumno_t;
 
 /*=====[Definitions of public global variables]==============================*/
 
+//! Vector que guarda todos los alumnos y sus datos
 extern const alumno_t ALUMNOS[];
 
+//! Variable que determina la cantidad de alumnos
 extern const int CANTIDAD_ALUMNOS;
 
 /*=====[Prototypes (declarations) of public functions]=======================*/
 
+/*! @brief Función para agregar alumno y mostrar en pantalla
+ *
+ *  @param[in]   cadena: Cadena de caracteres que contiene datos personales de alumno
+ *  @param[in]   espacio: Hace referencia a la cantidad de caracteres ingresados 
+ *  @param[in]   alumno: Hace referencia al vector que guarda los datos del alumno
+ *
+ *  @return: True si la función se completó sin errores. Caso contrario devuelve false
+ */
+
 bool SerializarAlumno(char * cadena, size_t espacio, const alumno_t alumno);
+
+
+/*! @brief Función para serializar alumno al listado y mostrar en pantalla
+ *
+ *  @param[in]  cadena: Cadena de caracteres que contiene datos personales de alumno
+ *  @param[in]  espacio: Hace referencia a la cantidad de caracteres ingresados 
+ *  @param[in]  alumno: Hace referencia al vector del listado de alumnos
+ *  @param[in]  cantidad: Hace referencia a la cantidad de alumnos
+ *
+ *  @return: True si la función se completó sin errores. Caso contrario devuelve false
+ */
 
 bool SerializarAlumnos(char * cadena, size_t espacio, const alumno_t alumnos[], int cantidad);
 
