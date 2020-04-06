@@ -16,7 +16,7 @@ $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c
 
 doc:
 	@echo Building Docs
-	@doxygen	./doxyfiles
+	@doxygen
 
 ###############################################################################
 # Creation of output folders
