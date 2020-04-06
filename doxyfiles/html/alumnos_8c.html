@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Trabajo práctico 1
-   &#160;<span id="projectnumber">1</span>
+   &#160;<span id="projectnumber">TP1</span>
    </div>
    <div id="projectbrief">Documentación doxygen tp1</div>
   </td>
@@ -81,15 +81,19 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a94d19b92fc92e35f30662e321356326a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="alumnos_8c.html#a94d19b92fc92e35f30662e321356326a">SerializarAlumno</a> (char *cadena, size_t espacio, const <a class="el" href="alumnos_8h.html#a32ddb7f533805c702721445ba11db3e1">alumno_t</a> alumno)</td></tr>
+<tr class="memdesc:a94d19b92fc92e35f30662e321356326a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Función para agregar alumno y mostrar en pantalla.  <a href="alumnos_8c.html#a94d19b92fc92e35f30662e321356326a">More...</a><br /></td></tr>
 <tr class="separator:a94d19b92fc92e35f30662e321356326a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04d0b9e50c126d1507f936f7d51b98f1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="alumnos_8c.html#a04d0b9e50c126d1507f936f7d51b98f1">SerializarAlumnos</a> (char *cadena, size_t espacio, const <a class="el" href="alumnos_8h.html#a32ddb7f533805c702721445ba11db3e1">alumno_t</a> alumnos[], int cantidad)</td></tr>
+<tr class="memdesc:a04d0b9e50c126d1507f936f7d51b98f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Función para serializar alumno al listado y mostrar en pantalla.  <a href="alumnos_8c.html#a04d0b9e50c126d1507f936f7d51b98f1">More...</a><br /></td></tr>
 <tr class="separator:a04d0b9e50c126d1507f936f7d51b98f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:ac069805169418a8efebf22c025e195c5"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="alumnos_8h.html#a32ddb7f533805c702721445ba11db3e1">alumno_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="alumnos_8c.html#ac069805169418a8efebf22c025e195c5">ALUMNOS</a> []</td></tr>
+<tr class="memdesc:ac069805169418a8efebf22c025e195c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector que guarda todos los alumnos y sus datos.  <a href="alumnos_8c.html#ac069805169418a8efebf22c025e195c5">More...</a><br /></td></tr>
 <tr class="separator:ac069805169418a8efebf22c025e195c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e0b22baac6dc7d0cf8e13559d500ba8"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="alumnos_8c.html#a3e0b22baac6dc7d0cf8e13559d500ba8">CANTIDAD_ALUMNOS</a> = (sizeof(<a class="el" href="alumnos_8c.html#ac069805169418a8efebf22c025e195c5">ALUMNOS</a>) / sizeof(<a class="el" href="alumnos_8h.html#a32ddb7f533805c702721445ba11db3e1">alumno_t</a>))</td></tr>
+<tr class="memdesc:a3e0b22baac6dc7d0cf8e13559d500ba8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variable que determina la cantidad de alumnos.  <a href="alumnos_8c.html#a3e0b22baac6dc7d0cf8e13559d500ba8">More...</a><br /></td></tr>
 <tr class="separator:a3e0b22baac6dc7d0cf8e13559d500ba8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -124,6 +128,17 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Función para agregar alumno y mostrar en pantalla. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">cadena</td><td>Cadena de caracteres que contiene datos personales de alumno </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">espacio</td><td>Hace referencia a la cantidad de caracteres ingresados </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">alumno</td><td>Hace referencia al vector que guarda los datos del alumno</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>: True si la función se completó sin errores. Caso contrario devuelve false </dd></dl>
 
 </div>
 </div>
@@ -165,6 +180,18 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Función para serializar alumno al listado y mostrar en pantalla. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">cadena</td><td>Cadena de caracteres que contiene datos personales de alumno </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">espacio</td><td>Hace referencia a la cantidad de caracteres ingresados </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">alumno</td><td>Hace referencia al vector del listado de alumnos </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cantidad</td><td>Hace referencia a la cantidad de alumnos</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>: True si la función se completó sin errores. Caso contrario devuelve false </dd></dl>
+
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
@@ -183,6 +210,8 @@ Variables</h2></td></tr>
 <div class="line">    &amp;MUNOZ_JORGE,</div>
 <div class="line">}</div>
 </div><!-- fragment -->
+<p>Vector que guarda todos los alumnos y sus datos. </p>
+
 </div>
 </div>
 <a id="a3e0b22baac6dc7d0cf8e13559d500ba8"></a>
@@ -196,6 +225,8 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Variable que determina la cantidad de alumnos. </p>
 
 </div>
 </div>

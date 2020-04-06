@@ -36,7 +36,7 @@
 
 //! Función principal del programa. Imprime el listado total de alumnos.
 int main(int argc, char *argv[]) {
-    char cadena[256];
+    char cadena[1024];
 
     if (SerializarAlumnos(cadena, sizeof(cadena), ALUMNOS, CANTIDAD_ALUMNOS)) {
         printf("Listado total de alumnos: %s\r\n", cadena);

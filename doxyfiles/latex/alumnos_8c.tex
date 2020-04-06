@@ -7,16 +7,16 @@
 \begin{DoxyCompactItemize}
 \item 
 bool \mbox{\hyperlink{alumnos_8c_a94d19b92fc92e35f30662e321356326a}{Serializar\+Alumno}} (char $\ast$cadena, size\+\_\+t espacio, const \mbox{\hyperlink{alumnos_8h_a32ddb7f533805c702721445ba11db3e1}{alumno\+\_\+t}} alumno)
-\item 
+\begin{DoxyCompactList}\small\item\em Función para agregar alumno y mostrar en pantalla. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{alumnos_8c_a04d0b9e50c126d1507f936f7d51b98f1}{Serializar\+Alumnos}} (char $\ast$cadena, size\+\_\+t espacio, const \mbox{\hyperlink{alumnos_8h_a32ddb7f533805c702721445ba11db3e1}{alumno\+\_\+t}} alumnos\mbox{[}$\,$\mbox{]}, int cantidad)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Función para serializar alumno al listado y mostrar en pantalla. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
 const \mbox{\hyperlink{alumnos_8h_a32ddb7f533805c702721445ba11db3e1}{alumno\+\_\+t}} \mbox{\hyperlink{alumnos_8c_ac069805169418a8efebf22c025e195c5}{A\+L\+U\+M\+N\+OS}} \mbox{[}$\,$\mbox{]}
-\item 
+\begin{DoxyCompactList}\small\item\em Vector que guarda todos los alumnos y sus datos. \end{DoxyCompactList}\item 
 const int \mbox{\hyperlink{alumnos_8c_a3e0b22baac6dc7d0cf8e13559d500ba8}{C\+A\+N\+T\+I\+D\+A\+D\+\_\+\+A\+L\+U\+M\+N\+OS}} = (sizeof(\mbox{\hyperlink{alumnos_8c_ac069805169418a8efebf22c025e195c5}{A\+L\+U\+M\+N\+OS}}) / sizeof(\mbox{\hyperlink{alumnos_8h_a32ddb7f533805c702721445ba11db3e1}{alumno\+\_\+t}}))
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Variable que determina la cantidad de alumnos. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Function Documentation}
@@ -26,12 +26,46 @@ const int \mbox{\hyperlink{alumnos_8c_a3e0b22baac6dc7d0cf8e13559d500ba8}{C\+A\+N
 \doxysubsubsection{\texorpdfstring{SerializarAlumno()}{SerializarAlumno()}}
 {\footnotesize\ttfamily bool Serializar\+Alumno (\begin{DoxyParamCaption}\item[{char $\ast$}]{cadena,  }\item[{size\+\_\+t}]{espacio,  }\item[{const \mbox{\hyperlink{alumnos_8h_a32ddb7f533805c702721445ba11db3e1}{alumno\+\_\+t}}}]{alumno }\end{DoxyParamCaption})}
 
+
+
+Función para agregar alumno y mostrar en pantalla. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em cadena} & Cadena de caracteres que contiene datos personales de alumno \\
+\hline
+\mbox{\texttt{ in}}  & {\em espacio} & Hace referencia a la cantidad de caracteres ingresados \\
+\hline
+\mbox{\texttt{ in}}  & {\em alumno} & Hace referencia al vector que guarda los datos del alumno\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: True si la función se completó sin errores. Caso contrario devuelve false 
+\end{DoxyReturn}
 \mbox{\Hypertarget{alumnos_8c_a04d0b9e50c126d1507f936f7d51b98f1}\label{alumnos_8c_a04d0b9e50c126d1507f936f7d51b98f1}} 
 \index{alumnos.c@{alumnos.c}!SerializarAlumnos@{SerializarAlumnos}}
 \index{SerializarAlumnos@{SerializarAlumnos}!alumnos.c@{alumnos.c}}
 \doxysubsubsection{\texorpdfstring{SerializarAlumnos()}{SerializarAlumnos()}}
 {\footnotesize\ttfamily bool Serializar\+Alumnos (\begin{DoxyParamCaption}\item[{char $\ast$}]{cadena,  }\item[{size\+\_\+t}]{espacio,  }\item[{const \mbox{\hyperlink{alumnos_8h_a32ddb7f533805c702721445ba11db3e1}{alumno\+\_\+t}}}]{alumnos\mbox{[}$\,$\mbox{]},  }\item[{int}]{cantidad }\end{DoxyParamCaption})}
 
+
+
+Función para serializar alumno al listado y mostrar en pantalla. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em cadena} & Cadena de caracteres que contiene datos personales de alumno \\
+\hline
+\mbox{\texttt{ in}}  & {\em espacio} & Hace referencia a la cantidad de caracteres ingresados \\
+\hline
+\mbox{\texttt{ in}}  & {\em alumno} & Hace referencia al vector del listado de alumnos \\
+\hline
+\mbox{\texttt{ in}}  & {\em cantidad} & Hace referencia a la cantidad de alumnos\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: True si la función se completó sin errores. Caso contrario devuelve false 
+\end{DoxyReturn}
 
 
 \doxysubsection{Variable Documentation}
@@ -48,9 +82,17 @@ const int \mbox{\hyperlink{alumnos_8c_a3e0b22baac6dc7d0cf8e13559d500ba8}{C\+A\+N
 \DoxyCodeLine{\}}
 
 \end{DoxyCode}
+
+
+Vector que guarda todos los alumnos y sus datos. 
+
 \mbox{\Hypertarget{alumnos_8c_a3e0b22baac6dc7d0cf8e13559d500ba8}\label{alumnos_8c_a3e0b22baac6dc7d0cf8e13559d500ba8}} 
 \index{alumnos.c@{alumnos.c}!CANTIDAD\_ALUMNOS@{CANTIDAD\_ALUMNOS}}
 \index{CANTIDAD\_ALUMNOS@{CANTIDAD\_ALUMNOS}!alumnos.c@{alumnos.c}}
 \doxysubsubsection{\texorpdfstring{CANTIDAD\_ALUMNOS}{CANTIDAD\_ALUMNOS}}
 {\footnotesize\ttfamily const int C\+A\+N\+T\+I\+D\+A\+D\+\_\+\+A\+L\+U\+M\+N\+OS = (sizeof(\mbox{\hyperlink{alumnos_8c_ac069805169418a8efebf22c025e195c5}{A\+L\+U\+M\+N\+OS}}) / sizeof(\mbox{\hyperlink{alumnos_8h_a32ddb7f533805c702721445ba11db3e1}{alumno\+\_\+t}}))}
+
+
+
+Variable que determina la cantidad de alumnos. 
 

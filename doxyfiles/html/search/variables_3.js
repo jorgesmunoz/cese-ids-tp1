@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['nombres_27',['nombres',['../structalumno__s.html#a1f4dfcb0f32082d74e1686c35f6dde7d',1,'alumno_s']]]
+  ['nombres_27',['nombres',['../structalumno__s.html#a7da1db05a0e58b777b002fd9a59cfcef',1,'alumno_s']]]
 ];
